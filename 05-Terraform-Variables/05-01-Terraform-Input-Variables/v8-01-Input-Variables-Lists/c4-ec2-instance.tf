@@ -1,8 +1,8 @@
 # Create EC2 Instance
 resource "aws_instance" "my-ec2-vm" {
   ami                    = var.ec2_ami_id
-  instance_type          = var.ec2_instance_type[0]
-  key_name               = "terraform-key"
+  instance_type          = var.ec2_instance_type[1]
+  key_name               = "terraform-kp"
   count                  = var.ec2_instance_count
   user_data              = <<-EOF
     #!/bin/bash
