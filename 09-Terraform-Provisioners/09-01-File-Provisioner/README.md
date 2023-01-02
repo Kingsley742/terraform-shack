@@ -129,11 +129,11 @@ terraform plan
 terraform apply -auto-approve
 
 # Verify - Login to EC2 Instance
-chmod 400 private-key/terraform-key.pem 
-ssh -i private-key/terraform-key.pem ec2-user@IP_ADDRESSS_OF_YOUR_VM
-ssh -i private-key/terraform-key.pem ec2-user@54.197.54.126
+chmod 400 private-key/terraform-kp.pem 
+ssh -i private-key/terraform-kp.pem ec2-user@IP_ADDRESSS_OF_YOUR_VM
+ssh -i private-key/terraform-kp.pem ec2-user@3.93.186.4
 Verify /tmp for all files copied
-cd /tmp
+cd /tmpcd
 ls -lrta /tmp
 
 # Clean-up
