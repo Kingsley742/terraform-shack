@@ -1,0 +1,53 @@
+2023-01-08T15:52:03.893-0400 [INFO]  Terraform version: 1.3.6
+2023-01-08T15:52:03.893-0400 [DEBUG] using github.com/hashicorp/go-tfe v1.9.0
+2023-01-08T15:52:03.893-0400 [DEBUG] using github.com/hashicorp/hcl/v2 v2.15.0
+2023-01-08T15:52:03.893-0400 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2023-01-08T15:52:03.893-0400 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2023-01-08T15:52:03.893-0400 [DEBUG] using github.com/zclconf/go-cty v1.12.1
+2023-01-08T15:52:03.893-0400 [INFO]  Go runtime version: go1.19.3
+2023-01-08T15:52:03.893-0400 [INFO]  CLI args: []string{"terraform", "init"}
+2023-01-08T15:52:03.893-0400 [TRACE] Stdout is a terminal of width 125
+2023-01-08T15:52:03.893-0400 [TRACE] Stderr is a terminal of width 125
+2023-01-08T15:52:03.893-0400 [TRACE] Stdin is a terminal
+2023-01-08T15:52:03.893-0400 [DEBUG] Attempting to open CLI config file: /Users/kingsleyogbuanya/.terraformrc
+2023-01-08T15:52:03.893-0400 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2023-01-08T15:52:03.893-0400 [INFO]  Loading CLI configuration from /Users/kingsleyogbuanya/.terraform.d/credentials.tfrc.json
+2023-01-08T15:52:03.893-0400 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2023-01-08T15:52:03.893-0400 [DEBUG] ignoring non-existing provider search directory /Users/kingsleyogbuanya/.terraform.d/plugins
+2023-01-08T15:52:03.893-0400 [DEBUG] ignoring non-existing provider search directory /Users/kingsleyogbuanya/Library/Application Support/io.terraform/plugins
+2023-01-08T15:52:03.893-0400 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2023-01-08T15:52:03.893-0400 [INFO]  CLI command args: []string{"init"}
+2023-01-08T15:52:03.896-0400 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2023-01-08T15:52:03.896-0400 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2023-01-08T15:52:03.896-0400 [DEBUG] New state was assigned lineage "8a2889c5-86f1-60fa-3d2f-0fda14cbdd89"
+2023-01-08T15:52:03.896-0400 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2023-01-08T15:52:03.896-0400 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2023-01-08T15:52:03.896-0400 [DEBUG] checking for provisioner in "."
+2023-01-08T15:52:03.896-0400 [DEBUG] checking for provisioner in "/opt/homebrew/bin"
+2023-01-08T15:52:03.896-0400 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2023-01-08T15:52:03.896-0400 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2023-01-08T15:52:03.896-0400 [TRACE] statemgr.Filesystem: reading initial snapshot from terraform.tfstate
+2023-01-08T15:52:03.896-0400 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2023-01-08T15:52:03.896-0400 [TRACE] statemgr.Filesystem: read nil snapshot
+2023-01-08T15:52:03.896-0400 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2023-01-08T15:52:03.896-0400 [TRACE] HTTP client GET request to https://registry.terraform.io/.well-known/terraform.json
+2023-01-08T15:52:04.157-0400 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2023-01-08T15:52:04.157-0400 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2023-01-08T15:52:04.328-0400 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2023-01-08T15:52:04.328-0400 [TRACE] getproviders.SearchLocalDirectory: failed to resolve symlinks for .terraform/providers: lstat .terraform: no such file or directory
+2023-01-08T15:52:04.328-0400 [TRACE] providercache.fillMetaCache: error while scanning directory .terraform/providers: cannot search .terraform/providers: lstat .terraform/providers: no such file or directory
+2023-01-08T15:52:04.329-0400 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/3.76.1/download/darwin/arm64
+2023-01-08T15:52:04.329-0400 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/aws/3.76.1/download/darwin/arm64
+2023-01-08T15:52:04.479-0400 [DEBUG] GET https://releases.hashicorp.com/terraform-provider-aws/3.76.1/terraform-provider-aws_3.76.1_SHA256SUMS
+2023-01-08T15:52:04.479-0400 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/3.76.1/terraform-provider-aws_3.76.1_SHA256SUMS
+2023-01-08T15:52:04.704-0400 [DEBUG] GET https://releases.hashicorp.com/terraform-provider-aws/3.76.1/terraform-provider-aws_3.76.1_SHA256SUMS.72D7468F.sig
+2023-01-08T15:52:04.704-0400 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/3.76.1/terraform-provider-aws_3.76.1_SHA256SUMS.72D7468F.sig
+2023-01-08T15:52:04.798-0400 [TRACE] providercache.Dir.InstallPackage: installing registry.terraform.io/hashicorp/aws v3.76.1 from https://releases.hashicorp.com/terraform-provider-aws/3.76.1/terraform-provider-aws_3.76.1_darwin_arm64.zip
+2023-01-08T15:52:04.798-0400 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/3.76.1/terraform-provider-aws_3.76.1_darwin_arm64.zip
+2023-01-08T15:52:09.163-0400 [DEBUG] Provider signed by 34365D9472D7468F HashiCorp Security (hashicorp.com/security) <security@hashicorp.com>
+2023-01-08T15:52:10.072-0400 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2023-01-08T15:52:10.073-0400 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v3.76.1 for darwin_arm64 at .terraform/providers/registry.terraform.io/hashicorp/aws/3.76.1/darwin_arm64
+2023-01-08T15:52:10.073-0400 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/aws/3.76.1/darwin_arm64 as a candidate package for registry.terraform.io/hashicorp/aws 3.76.1

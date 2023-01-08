@@ -21,20 +21,20 @@ variable "high_availability" {
   type        = bool
   description = "If this is a multiple instance deployment, choose `true` to deploy 2 instances"
   default     = false
-  #default     = true
+  #default    = true
 }
 
 
 variable "name" {
-  description = "The username assigned to the infrastructure"
+  description  = "The username assigned to the infrastructure"
   type = string 
-  default     = "ec2-user"
+  default      = "ec2-user"
   #default     = ""
 }
 
 variable "team" {
   description = "The team responsible for the infrastructure"
   type = string
-  default     = "stacksimplify"
+  default     = "stranacts"
 }
 
